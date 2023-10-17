@@ -4,74 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-
-        body {
-            max-width: 1440px;
-            /* background-image: url(./images/desktop.jpg);
-            background-repeat: no-repeat; */
-        }
-
-        /*  @media (max-width: 1440px) {
-            div {
-                width: 100vw;
-                height: 2244px;
-                background-image: url(./images/desktop.jpg);
-            }
-        }
-
-        @media (max-width: 720px) {
-            .screen {
-                width: 100vw;
-                height: 1874px;
-                background-image: url(./images/tablet.jpg);
-            }
-        }
-
-        @media (max-width: 360px) {
-            .screen {
-                width: 100vw;
-                height: 1963px;
-                background-image: url(./images/mobile.jpg);
-            }
-        } */
-    </style>
+    <title>🍕피자헛 리디자인🍕</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="screen"><img id="img1" src="./images/desktop.jpg" alt=""></div>
-    <img id="img2" src="./images/desktop02.jpg" alt="">
-    <img id="img3" src="./images/tablet.jpg" alt="">
-    <img id="img4" src="./images/tablet02.jpg" alt="">
-    <img id="img5" src="./images/mobile.jpg" alt="">
-    <img id="img6" src="./images/desktop02.jpg" alt="">
-
+    <div class="container">
+        <div class="button">그리드 보기</div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-    $(document).ready(function () {
-        /*웹페이지 열었을 때*/
-        $("#img1").show();
-        $("#img2,#img3,#img4,#img5,#img6").hide();
+    const IMG = new Image();
+    IMG.src = './images/tablet.jpg';
 
-        /*img1을 클릭했을 때 img2를 보여줌*/
-        $("#img1").click(function () {
-            $("#img1,#img3,#img4,#img5,#img6").hide();
-            $("#img2").show();
-        });
-
-        /*img2을 클릭했을 때 img1를 보여줌*/
-        $("#img2").click(function () {
-            $("#img1").show();
-            $("#img2").hide();
-        });
+    IMG.addEventListener('click', function () {
+        console.log(IMG);
     })
+        // $(document).ready(function () {
+        //     /*웹페이지 열었을 때*/
+        //     $("#img1").show();
+        //     $("#img2,#img3,#img4,#img5,#img6").hide();
+
+        //     /*img1을 클릭했을 때 img2를 보여줌*/
+        //     $("#img1").click(function () {
+        //         $("#img1,#img3,#img4,#img5,#img6").hide();
+        //         $("#img2").show();
+        //     });
+
+        //     /*img2을 클릭했을 때 img1를 보여줌*/
+        //     $("#img2").click(function () {
+        //         $("#img1").show();
+        //         $("#img2").hide();
+        //     });
+
+        // })
 </script>
 
 </html>

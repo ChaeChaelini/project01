@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(./images/desktop.jpg);
+    background-repeat: no-repeat;
+}
+
+.button {
+    opacity: 70%;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 100px;
+}
+
+@media (max-width: 720px) {
+    body {
+        width: 100vw;
+        height: 1874px;
+        margin: 0 auto;
+        background-image: url(./images/tablet.jpg);
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        width: 100vw;
+        height: 1963px;
+        margin: 0 auto;
+        background-image: url(./images/mobile.jpg);
+    }
+
+    .button {
+        margin: 50px;
+    }
+}
