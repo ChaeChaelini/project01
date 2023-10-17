@@ -1,54 +1,55 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 100vw;
-    height: 2244px;
-    max-width: 1440px;
-    margin: 0 auto;
-    background-image: url(./images/desktop.jpg);
-    background-repeat: no-repeat;
+  width: 100vw;
+  height: 2244px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url(./images/desktop.jpg);
+  background-repeat: no-repeat;
 }
 
-/* body {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    background-image: url(./images/desktop.jpg);
-    background-repeat: no-repeat;
-} */
+.grid {
+  background-image: url(./images/desktop02.jpg);
+}
 
 .button {
-    opacity: 70%;
-    padding: 10px;
-    text-align: center;
-    width: 100px;
-    background-color: aquamarine;
-    border-radius: 30px;
-    cursor: pointer;
-    margin: 100px;
+  opacity: 70%;
+  padding: 10px;
+  text-align: center;
+  width: 100px;
+  background-color: aquamarine;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 100px;
 }
 
 @media (max-width: 720px) {
-    .container {
-        width: 100vw;
-        height: 1874px;
-        margin: 0 auto;
-        background-image: url(./images/tablet.jpg);
-    }
+  .container {
+    width: 100vw;
+    height: 1874px;
+    margin: 0 auto;
+    background-image: url(./images/tablet.jpg);
+  }
+  .grid {
+    background-image: url(./images/tablet02.jpg);
+  }
 }
 
 @media (max-width: 360px) {
-    .container {
-        width: 100vw;
-        height: 1963px;
-        margin: 0 auto;
-        background-image: url(./images/mobile.jpg);
-    }
-
-    .button {
-        margin: 50px;
-    }
+  .container {
+    width: 100vw;
+    height: 1963px;
+    margin: 0 auto;
+    background-image: url(./images/mobile.jpg);
+  }
+  .grid {
+    background-image: url(./images/mobile02.jpg);
+  }
+  .button {
+    margin: 50px;
+  }
 }

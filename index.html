@@ -9,38 +9,18 @@
 </head>
 
 <body>
-    <div class="container">
-
-        <div class="button">그리드 보기</div>
-
-    </div>
+    <div class="button">그리드 보기</div>
+    <div class="container"> </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-    // const IMG = new Image();
-    // IMG.src = './images/tablet.jpg';
 
-    // IMG.addEventListener('click', function () {
-    //     console.log(IMG);
-    // })
-        // $(document).ready(function () {
-        //     /*웹페이지 열었을 때*/
-        //     $("#img1").show();
-        //     $("#img2,#img3,#img4,#img5,#img6").hide();
+    function toggleClass() {
+        $('.container').toggleClass('grid');
+    }
 
-        //     /*img1을 클릭했을 때 img2를 보여줌*/
-        //     $("#img1").click(function () {
-        //         $("#img1,#img3,#img4,#img5,#img6").hide();
-        //         $("#img2").show();
-        //     });
+    $('.button').on('click', toggleClass)
 
-        //     /*img2을 클릭했을 때 img1를 보여줌*/
-        //     $("#img2").click(function () {
-        //         $("#img1").show();
-        //         $("#img2").hide();
-        //     });
-
-        // })
 </script>
 
 </html>
