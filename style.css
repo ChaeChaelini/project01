@@ -8,7 +8,7 @@
   height: 2244px;
   max-width: 1440px;
   margin: 0 auto;
-  background-image: url(./images/Desktop.jpg);
+  background-image: url(./images/desktop.jpg);
   background-repeat: no-repeat;
 }
 
@@ -35,7 +35,7 @@
     width: 100vw;
     height: 1874px;
     margin: 0 auto;
-    background-image: url(./images/Tablet.jpg);
+    background-image: url(./images/tablet.jpg);
   }
 
   .grid {
