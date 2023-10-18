@@ -18,13 +18,16 @@
 
 .button {
   opacity: 70%;
-  padding: 10px;
+  padding: 10px 20px;
   text-align: center;
   width: 100px;
-  background-color: aquamarine;
+  color: white;
+  background-color: #208C6E;
   border-radius: 30px;
   cursor: pointer;
   margin: 100px;
+  font-family: pretendard;
+  font-weight: 300;
 }
 
 @media (max-width: 720px) {
@@ -34,6 +37,7 @@
     margin: 0 auto;
     background-image: url(./images/tablet.jpg);
   }
+
   .grid {
     background-image: url(./images/tablet02.jpg);
   }
@@ -46,9 +50,11 @@
     margin: 0 auto;
     background-image: url(./images/mobile.jpg);
   }
+
   .grid {
     background-image: url(./images/mobile02.jpg);
   }
+
   .button {
     margin: 50px;
   }
