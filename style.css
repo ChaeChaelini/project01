@@ -4,11 +4,12 @@
 }
 
 .container {
-  width: 100vw;
-  height: 2244px;
-  max-width: 1440px;
   margin: 0 auto;
+  width: 1440px;
+  height: 2244px;
   background-image: url(./images/Desktop.jpg);
+  background-position: center top;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -17,17 +18,93 @@
 }
 
 .button {
-  opacity: 70%;
+  left: 10%;
+  top: 0%;
+  position: fixed;
   padding: 10px 20px;
   text-align: center;
   width: 100px;
   color: white;
-  background-color: #208C6E;
   border-radius: 30px;
   cursor: pointer;
   margin: 100px;
   font-family: pretendard;
   font-weight: 300;
+  background: linear-gradient(
+    0deg,
+    rgba(251, 33, 117, 1) 0%,
+    rgba(234, 76, 137, 1) 100%
+  );
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.button span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.button:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(251, 33, 117, 1) 0%,
+    rgba(234, 76, 137, 1) 100%
+  );
+}
+
+.button:before,
+.button:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.9),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transition: all 0.3s ease;
+}
+.button:before {
+  height: 0%;
+  width: 0.1px;
+}
+.button:after {
+  width: 0%;
+  height: 0.1px;
+}
+.button:hover:before {
+  height: 100%;
+}
+.button:hover:after {
+  width: 100%;
+}
+.button span:before,
+.button span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.9),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.9),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transition: all 0.3s ease;
+}
+.button span:before {
+  width: 0.1px;
+  height: 0%;
+}
+.button span:after {
+  width: 0%;
+  height: 0.1px;
+}
+.button span:hover:before {
+  height: 100%;
+}
+.button span:hover:after {
+  width: 100%;
 }
 
 @media (max-width: 720px) {
