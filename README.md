@@ -2,6 +2,8 @@
 > 피자헛 메인페이지를 리디자인 해 보았습니다.
 > 
 ## 기획서 PPT
+[🔗기획서 PPT 자세히 보러가기](https://drive.google.com/file/d/1IZSaiRJEUPcwbvd2NySPEtCS2zdnrkp0/view)
+
 ![](https://github.com/ChaeChaelini/project01/assets/142187098/24ff5ac9-af56-4dc7-9afa-21a354df9bf6)
 ![](https://github.com/ChaeChaelini/project01/assets/142187098/b003a8f9-cdc2-49f7-8750-9b561fd86652)
 ![](https://github.com/ChaeChaelini/project01/assets/142187098/d1d54561-24dd-4106-898a-5a72d769a224)
