@@ -11,12 +11,19 @@
 <body>
     <div class="button"><span>그리드 보기</span></div>
     <div class="container"> </div>
+    <div class="check_wrap">
+        <a href="https://validator.w3.org/check?uri=chaechaelini.github.io/portfolio/"><img
+            src="https://www.w3.org/Icons/valid-html401" alt="w3c_html"></a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=chaechaelini.github.io/portfolio/"><img
+            src="https://jigsaw.w3.org/css-validator/images/vcss" alt="w3c_css"></a>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.button').on('click', function () {
+            $('.container').toggleClass('grid');
+        })
+    </script>
 </body>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script>
-    $('.button').on('click', function () {
-        $('.container').toggleClass('grid');
-    })
-</script>
+
 
 </html>
